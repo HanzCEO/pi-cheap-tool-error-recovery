@@ -1,0 +1,16 @@
+# --- dev & test only (not needed at runtime) ---
+test/
+scripts/
+coverage/
+
+# --- typescript / tooling config (pi loads .ts directly) ---
+tsconfig.json
+vitest.config.ts
+
+# --- local session / goal scratch ---
+.pi/
+*.log
+
+# --- editor / os ---
+.DS_Store
+*.swp
