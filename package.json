@@ -1,0 +1,26 @@
+{
+  "name": "pi-cheap-tool-error-recovery",
+  "version": "0.1.0",
+  "description": "A pi.dev extension that recovers tool-call argument errors using a separate recovery LLM.",
+  "type": "module",
+  "license": "Apache-2.0",
+  "pi": {
+    "extensions": ["./src/index.ts"]
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "e2e": "bash scripts/e2e.sh"
+  },
+  "dependencies": {
+    "@earendil-works/pi-ai": "^0.84.2",
+    "@earendil-works/pi-tui": "^0.84.2"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-coding-agent": "^0.84.2",
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0",
+    "vitest": "^2.1.0"
+  }
+}
